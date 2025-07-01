@@ -242,3 +242,32 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {
+		"dt": "Customer",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"Ride Customer 2",
+                    "Ride Customer 1"
+				],
+			]
+		],
+	},
+    {
+		"dt": "Item",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"Tourist Guide",
+                    "Travel Insurance",
+                    "WIFI Access"
+				],
+			]
+		],
+	},
+]
